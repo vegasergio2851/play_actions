@@ -12,6 +12,14 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      customer:
+        description: 'Customer Name'
+        required: true
+      apply:
+        description: 'Apply changes?'
+        required: true
+        default: 'false'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
